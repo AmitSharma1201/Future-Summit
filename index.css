@@ -1,0 +1,231 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: black; */
+    background-image: url(./style/intro-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+}
+
+/* header */
+#navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navbar-nav li {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease forwards;
+
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.navbar-nav li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.navbar-nav li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.navbar-nav li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.navbar-nav li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.navbar-nav li:nth-child(5) {
+    animation-delay: 1.0s;
+}
+
+.navbar-nav li:nth-child(6) {
+    animation-delay: 1.2s;
+}
+/* front page */
+.front-page{
+        background: transparent;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.8;    
+}
+.content-container{
+    
+    background-color: beige;
+    padding: 50px;
+}
+.content{
+    color: rgb(36, 31, 31);
+    text-align: center;
+
+}
+
+/* section 1 */
+.sec-1{
+    position: relative;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-image: url(./style/venue-info-bg.jpg);
+    background-attachment: fixed;
+    background-color: beige;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    /* width: 150vh; */
+    
+}
+.heading-event{
+    text-align: center;
+    padding: 80px;
+    background: #ddd;
+    opacity: 0.5;
+}
+
+.para{
+    /* padding: 100px; */
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    opacity: 0.8;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: #ddd;
+    height: 50vh;
+    width: 150vh;
+    margin-top: 50px;
+}
+
+/* section 3 */
+.heading-meet{
+    color: white;
+    text-align: center;
+    background: transparent;
+    color: white;
+
+}
+
+
+.list-meet ul li{
+    font-size: large;
+    text-align: left;
+    /* color: white; */
+    line-height: 2;
+    color: rgb(201, 0, 0);
+    list-style-type: none;
+    font-weight: 600;
+    background: #bbb;
+}
+.list-meet{
+    margin-left:30%;
+    margin-top: 5%;
+   background: #bbb;
+   opacity: 0.7;
+   margin-right: 80px;
+
+
+}
+
+
+.sec-2{
+    background-color: white;
+    background-image: url(./style/bg-sec2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    /* background: transparent; */
+    height:100vh;
+    /* text-align: center; */
+}
+
+/* attend */
+.text-attend{
+    margin: auto 40px;
+    line-height: 2;
+    
+}
+
+.attend-f{
+    display: flex;
+    background-color: aliceblue;
+    margin: 0;
+}
+
+.img-attend img{
+    height: 500px;
+    width: 600px;
+    border-radius: 20px;
+    margin: 80px;
+    /* text-align: right; */
+    /* justify-content: right; */
+
+}
+
+/* topic highlight */
+.topic-container{
+    background-color: azure;
+    padding: 40px;
+}
+.topic li {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 0.5s ease forwards;
+    margin: 10px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* Footer */
+.footer {
+    font-size: larger;
+    text-align: center;
+    padding: 80px;
+    background-color: #db5a5a;
+    color: white;
+}
